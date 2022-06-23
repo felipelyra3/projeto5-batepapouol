@@ -1,5 +1,12 @@
 let nome = "";
 
+pedirNome();
+
+function pedirNome() {
+    nome = prompt('Qual seu nome?');
+    entrarNaSala();
+}
+
 function entrar() {
     nome = document.querySelector('input[name="nome"]').value;
     const telaDeEntrada = document.querySelector('.telaDeEntrada');
@@ -39,4 +46,6 @@ function entrarNaSalaErro (request) {
     } else if (request.response.status === 500) {
         alert('500 - Ocorreu algum erro desconhecido no servidor');
     }
+
+    pedirNome();
 }
