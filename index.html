@@ -16,7 +16,7 @@
     <div class="mobile">
 
         <!-- INÍCIO DA TELA DE CHAT -->
-        <div class="containerChat">
+        <div class="containerChat displayNone">
 
         <!-- INÍCIO DO HEADER DO MOBILE -->
         <div class="mobileHeader">
@@ -27,11 +27,11 @@
 
         <!-- INÍCIO DO CHAT  -->
         <div class="chat">
-            <span class="chatStatus"><h1>(09:21:45)</h1><strong>João</strong> entra na sala...</span>
+            <!-- <span class="chatStatus"><h1>(09:21:45)</h1><strong>João</strong> entra na sala...</span>
             <span class="chatRegularMessage"><h1>(09:21:45)</h1><strong>João</strong>para <strong>todos:</strong> Bom dia</span>
             <span class="chatRegularMessage"><h1>(09:21:45)</h1><strong>Maria</strong>para <strong>João:</strong> Oi João :)</span>
             <span class="chatReservadamente"><h1>(09:21:45)</h1><strong>João</strong>reservadamente para <strong>Maria:</strong> Oi gatinha quer tc?</span>
-            <span class="chatStatus"><h1>(09:21:45)</h1><strong>Maria</strong> sai da sala...</span>
+            <span class="chatStatus"><h1>(09:21:45)</h1><strong>Maria</strong> sai da sala...</span> -->
         </div>
         <!-- FIM DO CHAT -->
 
@@ -54,9 +54,9 @@
     <!-- FIM DA SIDEBAR -->
 
         <!-- INÍCIO DA TELA DE ENTRADA -->
-        <div class="telaDeEntrada hide">
+        <div class="telaDeEntrada">
             <img src="./Assets/Images/logo 2.png">
-            <input type="email" placeholder="Digite seu nome" required>
+            <input type="email" placeholder="Digite seu nome" name="nome" required>
             <input type="button" value="Entrar" onclick="entrar()">
         </div>
         <!-- FIM DA TELA DE ENTRADA -->
@@ -67,6 +67,7 @@
     </div>
     <!-- FIM DO MOBILE -->
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
