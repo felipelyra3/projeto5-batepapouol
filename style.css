@@ -8,7 +8,6 @@ body {
 
 .mobile {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     width: 414px;
     height: 100vh;
@@ -16,6 +15,7 @@ body {
     margin-right: auto;
     background-color: #F3F3F3;
     border: solid 1px #EEEEEE;
+    position: relative;
 }
 
 .telaDeEntrada {
@@ -97,6 +97,8 @@ body {
 
 .chat {
     margin-top: 24px;
+    overflow-y: scroll;
+    height: 76vh;
 }
 
 .chat strong {
@@ -167,6 +169,7 @@ body {
     bottom: 0px;
     background: #FFFFFF;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    z-index: 1;
 }
 
 .mobileFooter input {
@@ -190,7 +193,6 @@ body {
 .chat {
     display: flex;
     flex-direction: column;
-    position: relative;
 }
 
 .hide {

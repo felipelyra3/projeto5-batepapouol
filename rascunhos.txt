@@ -1,4 +1,7 @@
-<div class="mobileHeader">
-            <img src="./Assets/Images/logo 1.png">
-            <img src="./Assets/Images/Vector.png">
+<!-- INÍCIO DA TELA DE ENTRADA -->
+        <div class="telaDeEntrada hide">
+            <img src="./Assets/Images/logo 2.png">
+            <input type="email" placeholder="Digite seu nome" name="nome" required>
+            <input type="button" value="Entrar" onclick="entrar()">
         </div>
+        <!-- FIM DA TELA DE ENTRADA -->
