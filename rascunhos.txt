@@ -5,3 +5,17 @@
             <input type="button" value="Entrar" onclick="entrar()">
         </div>
         <!-- FIM DA TELA DE ENTRADA -->
+
+
+
+        for (let i = 0; i < request.data.length; i++) {
+        if (ultimaMensagem.time !== request.data[i].time && ultimaMensagem.text !== request.data[i].text) {
+        if (request.data[i].type === 'status') {
+            chat.innerHTML += `<span class="chatStatus"><h1>${request.data[i].time}</h1><strong>${request.data[i].from}</strong> ${request.data[i].text}</span>`;
+        } else if (request.data[i].type === 'message') {
+            chat.innerHTML += `<span class="chatRegularMessage"><h1>${request.data[i].time}</h1><strong>${request.data[i].from}</strong>para <strong>${request.data[i].to}:</strong> ${request.data[i].text}</span>`;
+        } else if (request.data[i].type === 'private_message') {
+            chat.innerHTML += `<span class="chatReservadamente"><h1>${request.data[i].time}</h1><strong>${request.data[i].from}</strong>reservadamente para <strong>${request.data[i].to}:</strong> ${request.data[i].text}</span>`;
+        }
+        ultimaMensagem = request.data[i];
+    }
